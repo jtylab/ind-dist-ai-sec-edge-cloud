@@ -34,5 +34,9 @@ mian
 ### 注意事项:
    ##### 1.由于stm32的官方没有开源X-CUBE-AI的源码，因此stm32f407vet6的代码只能在keil里编译
    ##### 2.目前只有在arduino环境才能使用TensorFlow，推断是ESP-IDF的开发环境还没配置好 
+
+
+### 项目实现细节:
+本项目使用外接CAN收发器将不同的设备进行挂载CAN总线;两个esp作为stm32的wifi连接设备,通过AT指令实现通信;涉及Freertos和RT-thread两款rtos;".tflite"文件通过python的开源tensorflow库训练,esp32的ai边缘计算调用platformio中的"TensorFlowLite_ESP32"库通过python将".tflite"文件转换为C数组,stm32的ai边缘计算使用STM32CubeMX的X-CUBE-AI组件解析".tflite";
    
 
