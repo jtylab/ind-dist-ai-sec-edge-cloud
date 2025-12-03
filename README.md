@@ -23,10 +23,16 @@ mian
             |—— "HAL_Wifi"
             |—— "RTthread_Wifi"
 
-### 涉及的网站:
+### 相关网址:
 ##### 巴法云（远端固件传输） https://bemfa.com/
 ##### TensorFlow（机器学习源码） https://tensorflow.google.cn/?hl=zh-cn
 ##### ESP-IDF（乐鑫IDE官网） https://docs.espressif.com/projects/esp-idf/zh_CN/stable/esp32/get-started/index.html
-##### Platformio（本项目ESP32-S3的编码环境） https://platformio.org/
-##### RT-thread（本项目stm32f407vgt6的编码环境） https://www.rt-thread.org/
-##### STM32CubeMX - Keil（本项目stm32f407vet6的编码环境） https://www.st.com/en/development-tools/stm32cubemx.html - https://www.keil.com/
+##### Platformio（本项目ESP32-S3的编译环境） https://platformio.org/
+##### RT-thread（本项目stm32f407vgt6的编译环境） https://www.rt-thread.org/
+##### STM32CubeMX - Keil（本项目stm32f407vet6的编译环境） https://www.st.com/en/development-tools/stm32cubemx.html - https://www.keil.com/
+
+### 注意事项:
+   ##### 1.由于stm32的官方没有开源X-CUBE-AI的源码，因此stm32f407vet6的代码只能在keil里编译
+   ##### 2.目前只有在arduino环境才能使用TensorFlow，推断是ESP-IDF的开发环境还没配置好 
+   
+
