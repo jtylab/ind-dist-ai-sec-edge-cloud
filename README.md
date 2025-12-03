@@ -3,3 +3,4 @@
 ### 项目介绍:
 共两个子节点，一个主节点，子节点本地进行多个传感器的AI边缘计算（如果超过安全预警则立刻执行保护措施）。之后再通过CAN总线到主节点，主节点通过MQTT上传至云端（如果检测到无法连接云端，则把数据储存在SD卡中，待成功连上云端后通过HTPP再发送数据）。子节点的tensorflowAI检测模型可以通过OTA更新固件。子节点1使用ESP32-S3＋CAN收发器，基于FreeRTOS，搭载AI边缘检测，拥有温湿度传感器DHT11，振动传感器MPU6050，气体传感器MQ-9，通过本地wifi升级固件。子节点2使用STM32F407VET6+CAN收发器+esp32wifi模块，基于FreeRTOS，搭载AI边缘检测，拥有光电传感器E3F-DS30C4，振动传感器，通过本地wifi升级固件。主节点使用STM32F407ZGT6+ESP8266wifi模块+CAN收发器+OLED显示屏+SD卡，基于RTthread，MQTT协议，HTTP协议。wifi接受OTA固件升级。
 ### 项目文件介绍:
+"Complete code"文件夹里附有完整工程的源码。
