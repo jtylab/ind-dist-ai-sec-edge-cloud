@@ -29,4 +29,4 @@ mian
 ##### ESP-IDF（乐鑫IDE官网） https://docs.espressif.com/projects/esp-idf/zh_CN/stable/esp32/get-started/index.html
 ##### Platformio（本项目ESP32-S3的编码环境） https://platformio.org/
 ##### RT-thread（本项目stm32f407vgt6的编码环境） https://www.rt-thread.org/
-##### STM32CubeMX（本项目stm32f407vet6的编码环境） https://www.st.com/en/development-tools/stm32cubemx.html
+##### STM32CubeMX - Keil（本项目stm32f407vet6的编码环境） https://www.st.com/en/development-tools/stm32cubemx.html - https://www.keil.com/
