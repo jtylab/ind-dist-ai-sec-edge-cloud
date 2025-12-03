@@ -37,6 +37,6 @@ mian
 
 
 ### 项目实现细节:
-本项目使用外接CAN收发器将不同的设备进行挂载CAN总线;两个esp作为stm32的wifi连接设备,通过AT指令实现通信;涉及Freertos和RT-thread两款rtos;".tflite"文件通过python的开源tensorflow库训练,esp32的ai边缘计算调用platformio中的"TensorFlowLite_ESP32"库通过python将".tflite"文件转换为C数组,stm32的ai边缘计算使用STM32CubeMX的X-CUBE-AI组件解析".tflite";
+本项目使用外接CAN收发器将不同的设备进行挂载CAN总线;两个esp作为stm32的wifi连接设备,通过AT指令实现通信;涉及Freertos和RT-thread两款rtos;".tflite"文件通过python的开源tensorflow库训练,esp32的ai边缘计算调用platformio中的"TensorFlowLite_ESP32"库通过python将".tflite"文件转换为C数组,stm32的ai边缘计算使用STM32CubeMX的X-CUBE-AI组件解析".tflite";stm32f407vgt6的SD,MQTT,AT通过RTThread的插件生成并调用
    
 
