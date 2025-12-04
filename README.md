@@ -6,7 +6,7 @@
 ##
 ### 文件说明:
 mian
-    |—— "Complete code" —— 文件夹里附有完整工程的源码。
+#    |—— "Complete code" —— 文件夹里附有完整工程的源码。
     |—— "Main Code Analysis" —— 主要代码文件
         |—— "CAN"
             |—— "ESP32_can"
